@@ -1,0 +1,59 @@
+#navbarBrand{
+    margin-right: 8%;
+    font-family: 'Redressed', cursive;
+    padding:5%;
+    font-size: 24px;
+}
+
+#landingPart{
+    position: relative;
+    padding: 8%;
+    margin-top: 50px;
+    overflow:hidden;
+}
+#introText{
+    padding-top: 5%;
+}
+#myImage{
+    width: 25%; float: right; border-radius: 5px;
+    max-width: 300px;
+}
+#educationSection{
+    padding: 5%;
+    overflow: hidden;
+}
+#inhaLogo{
+    width: 25%; float: left; border-radius: 5px;
+    max-width: 300px; 
+    opacity: 70%;
+    margin-right: 5%;
+    filter: grayscale(100%);
+}
+#languages{
+    float: left;
+    width: 50%;
+}
+#educationSection ul{
+    padding: 0;
+    font-size: large;
+    color: rgb(220, 220, 220);
+} 
+#projectsSection{
+    padding: 5%;
+    text-align: center;
+}
+/* h3{
+    width: fit-content;
+    margin: auto;
+} */
+.socialMedia{
+    margin: 10px auto;
+    padding: 5px;
+}
+/* @media (min-width: 900px){
+    #navbarBrand{
+        margin-right: 15%;
+        font-family: 'Redressed', cursive;
+        padding-top: 5px;
+    }
+} */

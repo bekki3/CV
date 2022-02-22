@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToeGame</title>
+</head>
+<body>
+    <ul>
+    <li><button id="button1" onclick="clicked(1)"></button></li>
+    <li><button id="button2" onclick="clicked(2)"></button></li>
+    <li><button id="button3" onclick="clicked(3)"></button></li>
+    <li><button id="button4" onclick="clicked(4)"></button></li>
+    <li><button id="button5" onclick="clicked(5)"></button></li>
+    <li><button id="button6" onclick="clicked(6)"></button></li>
+    <li><button id="button7" onclick="clicked(7)"></button></li>
+    <li><button id="button8" onclick="clicked(8)"></button></li>
+    <li><button id="button9" onclick="clicked(9)"></button></li>
+    </ul>
+    <div id="endGame"></div>
+<style media="screen">
+  ul{ 
+    height: 300px; width: 300px; display: flex;
+    flex-wrap: wrap; list-style: none; margin: auto;
+    padding: 0%;
+  }
+  button{
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #endGame{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    background-color: rgb(240, 240, 240);
+  }
+
+</style>
+<script>
+  let array=[];
+  let turn=0;
+  let xny;
+  function turnFound(tmp)
+  {
+    for(let i=0; i<array.length; i++)
+    {
+      if (array[i]==tmp) {
+        return true;
+      }
+    }
+    return false;
+  }
+  const div=document.querySelector("#endGame");
+  const button1=document.getElementById("button1");
+  const button2=document.getElementById("button2");
+  const button3=document.getElementById("button3");
+  const button4=document.getElementById("button4");
+  const button5=document.getElementById("button5");
+  const button6=document.getElementById("button6");
+  const button7=document.getElementById("button7");
+  const button8=document.getElementById("button8");
+  const button9=document.getElementById("button9");
+  button1.value="a";
+  button2.value="b";
+  button3.value="c";
+  button4.value="d";
+  button5.value="e";
+  button6.value="f";
+  button7.value="g";
+  button8.value="h";
+  button9.value="i";
+  function endGame(tmp) {
+    if (tmp=="X") {
+      div.innerHTML=`${tmp} winner | O loser`;
+    }
+    else{
+      div.innerHTML=`${tmp} winner | X loser`;
+    }
+    setTimeout(() => {
+      location.reload();
+    }, 3000);
+  }
+function clicked(num)
+{
+  if (turn%2==0) {
+    xny="X";
+  }
+  else{
+    xny="O";
+  }
+  switch (num) {
+    case 1:
+      {
+        console.log(num);
+        if(!turnFound(num))
+        {
+          button1.value=xny;
+          button1.innerHTML=button1.value;
+          array.push(num);
+          turn++;
+        }
+        break;
+      }
+    case 2:
+      {
+        console.log(num);
+        if(!turnFound(num))
+        {
+          button2.value=xny;
+          button2.innerHTML=button2.value;
+          array.push(num);
+          turn++;
+        }
+        break;
+      }
+    case 3:
+      {
+        console.log(num);
+        if(!turnFound(num))
+        {
+          button3.value=xny;
+          button3.innerHTML=button3.value;
+          array.push(num);
+          turn++;
+        }
+        break;
+      }
+    case 4:
+      {
+        console.log(num);
+        if(!turnFound(num))
+        {
+          button4.value=xny;
+          button4.innerHTML=button4.value;
+          array.push(num);
+          turn++;
+        }
+        break;
+      }
+    case 5:
+      {
+        console.log(num);
+        if(!turnFound(num))
+        {
+          button5.value=xny;
+          button5.innerHTML=button5.value;
+          array.push(num);
+          turn++;
+        }
+        break;
+      }
+    case 6:
+      {
+        console.log(num);
+        if(!turnFound(num))
+        {
+          button6.value=xny;
+          button6.innerHTML=button6.value;
+          array.push(num);
+          turn++;
+        }
+        break;
+      }
+    case 7:
+      {
+        console.log(num);
+        if(!turnFound(num))
+        {
+          button7.value=xny;
+          button7.innerHTML=button7.value;
+          array.push(num);
+          turn++;
+        }
+        break;
+      }
+    case 8:
+      {
+        console.log(num);
+        if(!turnFound(num))
+        {
+          button8.value=xny;
+          button8.innerHTML=button8.value;
+          array.push(num);
+          turn++;
+        }
+        break;
+      }
+    case 9:
+      {
+        console.log(num);
+        if(!turnFound(num))
+        {
+          button9.value=xny;
+          button9.innerHTML=button9.value;
+          array.push(num);
+          turn++;
+        }
+        break;
+      }
+      
+  }
+  if (turn>8) {
+    div.innerHTML="Game Over! Losers";
+    setTimeout(() => {
+      location.reload();
+    }, 3000);
+}
+  if(button1.value===button2.value&&button2.value===button3.value)
+  {
+    endGame(button1.value);
+  }
+  else if(button4.value===button5.value&&button5.value===button6.value)
+  {
+    endGame(button4.value);
+  }
+  else if(button7.value===button8.value&&button8.value===button9.value)
+  {
+    endGame(button7.value);
+  }
+  else if(button1.value===button4.value&&button4.value===button7.value)
+  {
+    endGame(button1.value);
+  }
+  else if(button2.value===button5.value&&button5.value===button8.value)
+  {
+    endGame(button2.value);
+  }
+  else if(button3.value===button6.value&&button6.value===button9.value)
+  {
+    endGame(button3.value);
+  }
+  else if(button1.value===button5.value&&button5.value===button9.value)
+  {
+    endGame(button1.value);
+  }
+  else if(button3.value===button5.value&&button5.value===button7.value)
+  {
+    endGame(button3.value);
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bekhzod's CV Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Oswald:wght@700&family=Redressed&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class='bg-secondary text-light'>
+
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid" style="width: 50%;">
+      <a href="#" id="navbarBrand" class="navbar-brand">Bekhzod</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height:200px;
+        text-align: right;">
+          <li class="nav-item">
+            <a class="nav-link" href="#projectsSection">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#educationSection">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactSection">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projectsSection">Skills</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle mx-3" type="button" id="dropdownMenuButton1"
+      data-bs-toggle="dropdown" aria-expanded="false" style="float: right;">
+        Projects
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1s">
+        <li><a class="dropdown-item" href="https://ekurs.uz">eKurs.uz</a></li>
+        <li><a class="dropdown-item" href="game.html">MathGame</a></li>
+        <li><a class="dropdown-item" href="ticTacGame.html">TicTacToe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="bg-dark" id="landingPart">
+      <img src="me.jpg" id="myImage" alt="my picture haha">
+      <h1 id="introText">Behzod is a Full-Stack WEB Developer who loves to craft
+         a good story
+      </h1>
+      <br>
+         <hr class="w-25">
+         <p class="text-secondary">
+           I program in C++, Java, Python, JavaScript
+         </p>
+  </div>
+<!-- //////////////////////////////////////////////////// -->
+
+<div id="educationSection">
+  <img id="inhaLogo" src="https://inha.uz/wp-content/uploads/2021/01/iut-logo-roundx512.png" alt="">
+
+  <h2>
+    I'm sophomore at INHA University in Tashkent
+  </h2>
+  <h3 style="text-align: center; margin-top: 5%;">
+    Languages:
+  </h3><br>
+  <div id="languages">
+  <ul>
+    <li class="list-unstyled p-0"><h4>English ★★★</h4> </li>
+    <li class="list-unstyled p-0"><h4>Russian ★★☆</h4></li>
+    <li class="list-unstyled p-0"><h4>Uzbek ★★☆</h4></li>
+  </ul>
+  </div>
+
+  <div style="float: right;" id="carousel" class="carousel slide w-25" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://cdn-icons-png.flaticon.com/512/1822/1822921.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968509.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://cdn-icons-png.flaticon.com/512/152/152760.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="cIcon.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //////////////////////////////////////////////////// -->
+
+<div id="projectsSection" class="bg-dark">
+  <h3>Some of my projects:</h3>
+<div class="container py-3 text-dark">
+  <header id="projectSection">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    </div>
+  </header>
+
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm bg-secondary text-light">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">MathGame</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Game</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Cool</li>
+              <li>Timed</li>
+              <li>AI included</li>
+            </ul>
+            <a href="game.html"><button type="button" class="w-100 btn btn-lg btn-outline-light">Play for free</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm bg-secondary text-white">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Ekurs.uz</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">SocProject</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Free courses</li>
+              <li>Non-profit</li>
+              <li>Help center access</li>
+            </ul>
+            <a href="https://www.ekurs.uz"><button type="button" class="w-100 btn btn-lg btn-light">Visit site</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm bg-secondary text-light">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">TicTacToe</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Game</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>2-player</li>
+              <li>Logic Game</li>
+              <li></li>
+              <li>No Design</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-light">Play now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</div>
+
+      <!-- <button class="btn btn-lg btn-secondary"><i class="fab fa-apple"></i> Download</button>
+      <button class="btn btn-lg btn-light"><i class="fab fa-google-play"></i> Download</button> -->
+
+<div id="contactSection" class="p-5">
+  
+  <div class="media text-center">
+    ©2022 Bekhzod Shukhratov <br>
+    <a class="text-light" href="https://www.instagram.com/ekurs.uz/"><i class="socialMedia fa-brands fa-xl fa-instagram"></i></a>
+    <a class="text-light" href="https://github.com/bekki3"><i class="socialMedia fa-brands fa-xl fa-github"></i></a>
+    <a class="text-light" href="https://www.t.me/bekki3"><i class="socialMedia fa-brands fa-xl fa-telegram"></i></a>
+  </div> 
+</div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
